@@ -21,11 +21,23 @@ export const CircleButton = ({imgUrl, handlePress, ...props}) => {
   )
 }
 
-export const RectButton = () => {
+export const RectButton = ({minWidth, fontSize, handlePress, ...props}) => {
     return (
-      <TouchableOpacity>
-        <Text>Button</Text>
-      </TouchableOpacity>
+      <TouchableOpacity style={{
+        backgroundColor: COLORS.primary,
+        borderRadius: SIZES.extraLarge,
+        minWidth: minWidth,
+        padding: SIZES.small,
+        ...props
+    }}
+    onPress={handlePress}>
+      <Text style={{
+        fontFamily: FONTS.semiBold,
+        fontSize: SIZES.font,
+        color: COLORS.white,
+        textAlign: 'center'
+      }}> Place a bit</Text>        
+    </TouchableOpacity>
     )
   }
   
