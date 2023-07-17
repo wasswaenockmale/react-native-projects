@@ -21,6 +21,31 @@ export const TaskDetails = () => {
         <Text>Title</Text>
         <Text>{}</Text>
       </View>
+
+      <View>
+        <Text>Description</Text>
+        {/* This should be a FlatList  */}
+      </View>
+
+      <View>
+        <Text>Category</Text>
+        <Text>{}</Text>
+      </View>
+
+      <View>
+        <Text>Status</Text>
+        <Text>{}</Text>
+      </View>
+
+      <View>
+        <Text>Priority</Text>
+        <Text>{}</Text>
+      </View>
+
+      <View>
+        <Text>Due date</Text>
+        <Text>{}</Text>
+      </View>
     </View>
   )
 }

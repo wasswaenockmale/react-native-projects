@@ -8,7 +8,7 @@ import { NormalButton } from '../components'
 const Dashboard = () => {
   return (
     <View style={{
-        padding:10
+        padding:20
     }}>
       <Header />
       <View style={{
