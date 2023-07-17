@@ -4,7 +4,7 @@ import { NormalButton } from './Buttons'
 import { COLORS, SIZES } from '../constants/themes'
 import { Ionicons } from '@expo/vector-icons'
 
-export const TaskCard = ({title, category, status}) => {
+export default TaskCard = ({title, category, status}) => {
   return (
     <View style={{
         padding:10,
